@@ -8,3 +8,5 @@ Tenho sempre que me lembrar de algumas coisas
     - Seguir o meu sonho de me tornar dev !!
  
  ## Vamos para cima, ninguém nasceu sabendo
+ ## Tenho fé que irei conseguir terminar este curso!!🙌
+ 🚀🚀🚀🚀🚀
