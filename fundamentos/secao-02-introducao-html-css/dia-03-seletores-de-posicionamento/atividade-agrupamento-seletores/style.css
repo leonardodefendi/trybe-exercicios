@@ -1,0 +1,40 @@
+div:hover{
+    border-color: black;
+    border-width: 1px;
+    border-style:inset;
+    height: 40px;
+}
+#primaria:hover{
+    background-color: blue;
+}
+#secundaria:hover{
+    background-color: orange;
+}
+#complementar:hover{
+    background-color: gray;
+}
+#escura:hover{
+    background-color: black;
+}
+#clara:hover{
+    background-color: yellow;
+}
+#primaria{
+    color: white;
+    font-style: italic;
+}
+#secundaria{
+    color:blueviolet
+}
+#complementar{
+    color:aqua;
+    font-size: 30px;
+    font-style: italic;
+}
+#escura{
+    color: blue;
+}
+#clara{
+    color:blanchedalmond;
+    font-style: italic;
+}
