@@ -28,22 +28,22 @@
 // console.log(menor);  
 // // -----------------------------------------------------------------
 
-// let numerosPrimos = []
-// let maiorNumero = 0;
+let numerosPrimos = []
+let maiorNumero = 0;
 
-// for (index = 1; index <= 50; index += 1 ){
+for (index = 1; index <= 50; index += 1 ){
   
-//   if (index % 2 === 0){
-//     numerosPrimos.push(index)
-//   }
-// }
+  if (index % 2 === 0){
+    numerosPrimos.push(index)
+  }
+}
 
-// for (index = 0; index < numerosPrimos.length; index += 1){
-//     if (numerosPrimos[index] > maiorNumero){
-//       maiorNumero = numerosPrimos[index];
-//     }
-// }
-// console.log("O maior numero é:", maiorNumero);
+for (index = 0; index < numerosPrimos.length; index += 1){
+    if (numerosPrimos[index] > maiorNumero){
+      maiorNumero = numerosPrimos[index];
+    }
+}
+console.log("O maior numero é:", maiorNumero);
 
 
 // let numero = 10;

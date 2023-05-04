@@ -62,7 +62,7 @@ function clienteIndex(cliente) {
 function removeCliente(cliente) {
   let validacao = validaCliente(cliente);
   if (validacao !== true) {
-    return validacao;
+    return validacao;g
   }
 
   let index = clienteIndex(cliente);
