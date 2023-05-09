@@ -1,0 +1,35 @@
+ol{
+    background-color: yellow;
+    
+}
+ol li.lista-par{
+    background-color: green;
+}
+ol li.lista-impar{
+    text-transform: uppercase;
+}
+h1, h2, h3{
+    color: red;
+}
+h1.itali{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li{
+    font-size: 20px;
+}
+li.itali{
+    font-weight: bold;
+
+}
+li.primeira{
+    color:blue
+}
+li.java{
+    background-color: pink;
+}
+li.bonus:hover{
+    font-weight: bold;
+    
+
+}
