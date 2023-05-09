@@ -12,12 +12,14 @@ function substituaX(nome) {
 // console.log(substituaX("Bebeto"))
 
 function minhasSkills (substituaX){
-  const skills = ['html', 'css', 'JavaScript '];
-  let final = "";
-  for (let index in skills){
-    final += 'para ${skills[index]}';
-  }
-return final;
+  const skills = ['html', 'css', 'JavaScript'];
+  // let final = substituaX(nome);
+  return  `${substituaX}
+Minhas três habilidades são:
+${skills[0]}
+${skills[1]}
+${skills[2]}`
+   
 }
 
 console.log(minhasSkills(substituaX("Bebeto")));
