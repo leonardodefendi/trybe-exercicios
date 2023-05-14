@@ -121,17 +121,15 @@ for(index = 0; index < 3; index += 1){
   createh3.classList.add('description')
 }
 // removendo elementos da lista
-const ul = document.querySelectorAll('.list');
-let lali = document.querySelectorAll('.lista-numeral')
-let ultimo = document.querySelector('.lista-numeral').previousSibling;
-ul.removeChild('ultimo');
+let listaNumeros = document.querySelectorAll('.lista-numeral');
+let listaPai =document.querySelector('ul')
 
-// for(let index = 0; index < createLi.length ; index +=''){
-//   let element = createLi[index];
-//   if(element.innerText.includes('9') || element.innerText.includes('10')){
-//     createLi.removeChild(element);
-//   }
-// };
+for(let index = 0; index < listaNumeros.length ; index += 1){
+  let element = listaNumeros[index];
+  if(element.innerText.includes('9') || element.innerText.includes('10')){
+    listaPai.removeChild(element);
+  }
+};
 
 
     </script>
