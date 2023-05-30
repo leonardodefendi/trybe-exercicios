@@ -3,7 +3,7 @@
 const mapString = (objectMap, string) => {
   const splitString = string.split('');
   const mappedArray = [];
-
+console.log(splitString);
   for (let index = 0; index < splitString.length; index += 1) {
     const character = splitString[index];
     const mappedValue = objectMap[character];
@@ -39,3 +39,6 @@ const decode = (string) => {
   };
   return mapString(map, string);
 }
+
+
+module.exports = { encode, decode };
