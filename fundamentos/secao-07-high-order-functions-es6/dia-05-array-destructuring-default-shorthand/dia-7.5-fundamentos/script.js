@@ -50,15 +50,38 @@ const greet = (name, message = 'Hi') => {
 
 
 
-// exercicio 05:
-const moreStudents = [
-  'Chris', 
-  ['Ahmad', 'Antigoni'], 
-  ['Toby', 'Sam']
+// // exercicio 05:
+// const moreStudents = [
+//   'Chris', 
+//   ['Ahmad', 'Antigoni'], 
+//   ['Toby', 'Sam']
+// ];
+
+// // Escreva seu código aqui
+// const newStudentsArray = moreStudents.flat();
+// const [student1, student2, student3, student4, student5] = newStudentsArray;
+
+// console.log(student1, student2, student3, student4, student5);
+const adult = [
+  {
+    weight: 100,
+    height: 1.85,
+  },
+  {
+    weight: 90,
+    height: 1.72,
+  },
+  {
+    weight: 79,
+    height: 1.99,
+  },
 ];
 
-// Escreva seu código aqui
-const newStudentsArray = moreStudents.flat();
-const [student1, student2, student3, student4, student5] = newStudentsArray;
+// IMC = Índice de Massa Corporal
 
-console.log(student1, student2, student3, student4, student5);
+function IMC(person) {
+  return parseFloat((person.weight/(Math.pow(person.height,2))).toFixed(2));
+}
+
+console.log(adult.map(IMC));
+
