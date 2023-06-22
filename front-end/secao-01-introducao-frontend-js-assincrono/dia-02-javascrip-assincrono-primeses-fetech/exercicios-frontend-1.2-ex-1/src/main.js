@@ -3,7 +3,8 @@ import './style.css';
 const superHeroimg = document.querySelector('#image');
 const superHeroName = document.querySelector('#name');
 const btnSortear = document.querySelector('#btn-sortear');
-const sorteadorNumero = () => Math.round(Math.random() * 1000);
+const numberMax = 1000;
+const sorteadorNumero = () => Math.round(Math.random() * numberMax);
 
 btnSortear.addEventListener('click', () => {
   superHeroimg.src = '';
