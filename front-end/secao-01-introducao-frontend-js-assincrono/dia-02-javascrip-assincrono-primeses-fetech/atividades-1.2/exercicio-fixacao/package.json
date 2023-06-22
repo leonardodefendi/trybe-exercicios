@@ -1,0 +1,14 @@
+{
+  "name": "exercicio-fixacao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.3.9"
+  }
+}
