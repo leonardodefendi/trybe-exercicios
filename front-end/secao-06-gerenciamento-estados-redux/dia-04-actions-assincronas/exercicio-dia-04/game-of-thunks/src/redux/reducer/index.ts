@@ -20,10 +20,6 @@ export const personagemReducer = (state = INITIAL_STATE, action: ActionType) => 
       return {
         ...state,
         isFetching: true,
-        name: '',
-        aliases: [],
-        titles: [],
-        error: '',
       };
     case REQUEST_SUCCESSFUL:
       return {

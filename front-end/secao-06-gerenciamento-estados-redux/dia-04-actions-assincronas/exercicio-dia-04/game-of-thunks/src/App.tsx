@@ -9,8 +9,13 @@ function App() {
   const rootState = useSelector((state: ReduxState) => state.error);
   return (
     <>
-      <Form />
-      {rootState === 'Teste' ? <NotFetch /> : <InforPerso />}
+      <div>
+        <Form />
+      </div>
+      <div>
+        {rootState === 'Teste' ? <NotFetch /> : <InforPerso />}
+
+      </div>
     </>
   );
 }

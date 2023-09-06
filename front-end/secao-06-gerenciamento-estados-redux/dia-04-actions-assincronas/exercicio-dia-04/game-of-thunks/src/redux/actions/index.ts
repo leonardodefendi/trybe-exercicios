@@ -25,13 +25,8 @@ export const fetchPeronagem = (personagem: string) => {
     try {
       dispach(requestStarted());
       const response = await fetch(`https://anapioficeandfire.com/api/characters?name=${personagem}`);
-      const data = await response.json();
-      const objPersonagem = {
-        name: data[0].name,
-        aliases: data[0].aliases,
-        titles: data[0].titles,
-      };
-      dispach(requestSuccesful(objPersonagem));
+      const { name, aliases, titles } = (await response.json())[0];
+      dispach(requestSuccesful({ name, aliases, titles }));
     } catch (error: any) {
       dispach(requestFailed(error.message));
     }
