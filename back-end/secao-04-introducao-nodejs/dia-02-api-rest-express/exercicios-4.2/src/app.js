@@ -32,7 +32,6 @@ app.get('/movies/:id', async (req, res) => {
 
 app.get('/movies', async (req, res) => {
   const movies = await readMovies();
-
   res.status(200).json({ movies });
 });
 
@@ -71,6 +70,15 @@ app.delete('/movies/:id', async (req, res) => {
   await fs.writeFileSync(dir, JSON.stringify(newMovies));
 
   return res.sendStatus(204).end();
+});
+
+app.get('/search', async (req, res) => {
+  const { q } = req.query;
+  const movies = await readMovies();
+  
+  const filtredMovies = movies.filter((mov) => mov.movie.includes(q));
+  console.log(filtredMovies);
+  res.status(200).json(filtredMovies);
 });
 
 module.exports = app;
