@@ -1,0 +1,5 @@
+Status 400: Bad request Erro do lado do cliente
+
+Status 422: Unprocessable content, a solicitação foi bem formada, mas não pode ser atendida devido a erros semanticos
+
+Status 401: Unauthorized, O cliente deve se autenticar para obter a respostas;
