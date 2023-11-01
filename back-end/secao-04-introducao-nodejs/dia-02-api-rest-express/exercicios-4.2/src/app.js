@@ -20,6 +20,19 @@ const readMovies = async () => {
   }
 };
 
+app.get('/movies/search', async (req, res) => {
+  console.log('entrou no search');
+  try {
+    const { q } = req.query;
+    const movies = await readMovies();
+  
+      const filtredMovies = movies.filter((mov) => mov.movie.includes(q));
+      return res.status(200).json(filtredMovies);
+  } catch (error) {
+    return res.status(500).end();
+  }
+});
+
 app.get('/movies/:id', async (req, res) => {
   const { id } = req.params;
 
@@ -32,6 +45,7 @@ app.get('/movies/:id', async (req, res) => {
 
 app.get('/movies', async (req, res) => {
   const movies = await readMovies();
+  console.log('teste');
   res.status(200).json({ movies });
 });
 
@@ -70,15 +84,6 @@ app.delete('/movies/:id', async (req, res) => {
   await fs.writeFileSync(dir, JSON.stringify(newMovies));
 
   return res.sendStatus(204).end();
-});
-
-app.get('/search', async (req, res) => {
-  const { q } = req.query;
-  const movies = await readMovies();
-  
-  const filtredMovies = movies.filter((mov) => mov.movie.includes(q));
-  console.log(filtredMovies);
-  res.status(200).json(filtredMovies);
 });
 
 module.exports = app;
