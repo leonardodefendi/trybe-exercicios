@@ -1,0 +1,7 @@
+monitor
+mouse
+teclado
+computador
+carro
+pe
+celular
