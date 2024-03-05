@@ -80,8 +80,27 @@ class LinkedList:
     def is_empty(self):
         return not self.__length
 
+    def clear(self):
+        self.head_value = None
+        self.__length = 0
+
+    def index_of(self, value):
+        value_returned = self.head_value
+        value_to_be_returned = None
+        index = 0
+        while index < len(self):
+            print(value_returned.value)
+            if value_returned.value == value:
+
+                value_to_be_returned = index
+            value_returned = value_returned.next
+            index += 1
+        return value_to_be_returned
+
 
 new_list = LinkedList()
 new_list.insert_first(3)
 new_list.insert_first(1)
-print(new_list)
+new_list.insert_first(4)
+
+# print(new_list)
