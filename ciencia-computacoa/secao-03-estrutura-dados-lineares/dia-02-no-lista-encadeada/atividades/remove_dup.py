@@ -7,6 +7,7 @@ def removed_dup(linked_list: LinkedList):
     new_list = LinkedList()
     while index < len(linked_list):
         element = linked_list.head_value.next
+        print("Elemento", element.next)
         if element not in dups:
             new_list.insert_first(element)
         dups.append(element)
@@ -28,6 +29,7 @@ def delete_duplicates(linked_list):
 new_list = LinkedList()
 new_list.insert_first(3)
 new_list.insert_first(3)
+new_list.insert_first(4)
 
 
 print(removed_dup(new_list))
